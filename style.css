@@ -1,0 +1,13 @@
+.display-image{
+    width: 20vw;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+
+.my-img{
+    width: 20vw;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(50%);
+}
