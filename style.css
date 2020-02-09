@@ -1,13 +1,24 @@
-.display-image{
-    width: 20vw;
-    border-radius: 50%;
-    margin-top: 20px;
-
+body{
+    background-color: black;
+}
+.about-me-text{
+    font-size: 28px;
+    margin-top: 100px;
+    transform: translateX(10%);
 }
 
-.my-img{
-    width: 20vw;
-    left: 50%;
+.display-img{
     border-radius: 50%;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(60%);
+    margin-top: 50px;
+}
+
+.fa{
+    font-size: 50px;
+}
+
+.internship-img{
+    border-radius: 50%;
+    width: 10vw;
 }
