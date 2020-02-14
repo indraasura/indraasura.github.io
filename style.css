@@ -1,15 +1,26 @@
+body{
+   background-color: black;
+}
+
+
+@media only screen and(min-width: 755px){
+    .about-me-text{
+        transform: translateX(10%);
+    }
+}
+
 
 .about-me-text{
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 100px;
     transform: translateX(10%);
 }
 
 .display-img{
-    border-radius: 50%;
+    border-radius: 5%;
     left: 50%;
-    transform: translateX(60%);
-    margin-top: 50px;
+    transform: translateX(80%);
+   
 }
 
 .fa{
@@ -19,4 +30,12 @@
 .internship-img{
     border-radius: 50%;
     width: 10vw;
+}
+
+.prog-lang{
+    background-color: black;
+}
+
+.lang-img{
+    width: 5vw;
 }
