@@ -1,0 +1,49 @@
+.about-me{
+    background-color: black;
+    position: relative;
+    height: 50vh;
+}
+
+.internships{
+    background-color: white;
+    position: relative;
+    height: 50vh;
+}
+
+.projects{
+    background-color: yellowgreen;
+    position: relative;
+    height: 50vh;
+}
+
+.resume{
+    background-color: wheat;
+    position: relative;
+    height: 50vh;
+}
+
+.about_me_img{
+    border-radius: 50%;
+    left: 50%;
+    margin-top: 30px;
+    width: 20vw;
+    transform: translateX(60%);
+}
+
+.about_me_text{
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(20%);
+}
+
+.about-me-cutout{
+    width:100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    position: relative;
+}
+
+.internship-header{
+    position: absolute;
+    margin-top: -600px;
+}

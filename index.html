@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Navbar start-->
+    <nav>
+        <div class="nav-wrapper black">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Sidenav start-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+    <!--Sidenav end-->
+
+    <!--About Me container start-->
+    <div class="about-me">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <p class="white-text flow-text about_me_text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="col s12 m6 l6">
+                <img class="responsive-img about_me_img" src="https://res.cloudinary.com/teepublic/image/private/s--9e-I4HZe--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1566035336/production/designs/5725559_0.jpg">
+            </div>
+        </div>
+    </div>
+    <img src="cutout.png" class="about-me-cutout">
+    <!--About Me container end-->
+    <!--Internships section start-->
+    <div class="internships">
+        <div class="row">
+            <div class="col s6 m6 l6 offset-s6 offset-m6 offset-l6">
+                <h1 class="header internship-header">Internships</h1>
+            </div>
+        </div>
+    </div>
+    <!--Internships section end-->
+    <!--Projects section start-->
+    <div class="projects"></div>
+    <!--Projects section end-->
+    <!--Resume section start-->
+    <div class="resume"></div>
+    <!--Resume section end-->
+
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
