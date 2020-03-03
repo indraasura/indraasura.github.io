@@ -17,7 +17,7 @@
    viewBox="0 0 965.76001 1125.76"
    sodipodi:docname="secondarycutout.png.svg"
    inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
-   inkscape:export-filename="/home/swarup/Documents/Dev/indraasura.github.io/primarycutout.png"
+   inkscape:export-filename="/home/swarup/Documents/Dev/indraasura.github.io/tertiary.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <metadata
@@ -28,12 +28,24 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs14">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4533">
+      <stop
+         style="stop-color:#ff5599;stop-opacity:1;"
+         offset="0"
+         id="stop4529" />
+      <stop
+         style="stop-color:#ff5599;stop-opacity:0;"
+         offset="1"
+         id="stop4531" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient852">
@@ -55,6 +67,15 @@
        x2="651.93365"
        y2="630.7901"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4533"
+       id="linearGradient4535"
+       x1="1.3498322"
+       y1="1127.1097"
+       x2="700.00842"
+       y2="763.51282"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -69,17 +90,17 @@
      inkscape:window-height="1025"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="0.74083285"
-     inkscape:cx="381.14719"
-     inkscape:cy="288.27535"
+     inkscape:zoom="1.0476959"
+     inkscape:cx="347.72465"
+     inkscape:cy="93.149771"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg10" />
   <path
-     style="fill:url(#linearGradient854);stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     d="M 0,564.22984 C 116.18176,961.68001 495.86948,1090.3009 966.40641,1126.2372 H 0.47723773 Z"
-     id="path846"
+     style="fill:url(#linearGradient4535);stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 1.3498322,1127.1098 0,728.5719 c 471.08078,-9.29874 726.62325,187.5696 967.83812,398.1426 z"
+     id="path4527"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccc" />
 </svg>

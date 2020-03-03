@@ -4,6 +4,14 @@
     background-image: linear-gradient(45deg, #D3CCE3, #E9E4F0);
 }
 
+@media screen and (min-width: 755px){
+    .light-img{
+        width: 30vw;
+    }
+}
+
+
+
 .dark-img{
     position: absolute;
     bottom: 0;
@@ -13,14 +21,15 @@
 .light-img{
     position: absolute;
     bottom: 0;
-    width: 30vw;
     height: 100%;
 }
 
 .pink-img{
     position: absolute;
     bottom: 0;
-    height: 100%;
+    width: 100%;
+    height: 20vw;
+    margin-left: -4px;
 }
 
 .about-me-greeting{
@@ -48,4 +57,48 @@
     height: 100vh;
     margin-top: -2px;
     background-image: linear-gradient(to bottom, #220b28ff, white);
+}
+
+.internship-header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.internship-container{
+    position: absolute;
+    top: 15%;
+}
+
+.card-panel{
+    width: 100%;
+}
+
+.internship-first-row{
+    position: absolute;
+    top: 20%;
+}
+
+.internship-second-row{
+    position: absolute;
+    top: 90%;
+}
+
+.projects{
+    
+    height: 100vh;
+    background-image: linear-gradient(white, #220b28ff);
+}
+
+.project-header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+
+.project-list{
+    position: absolute;
+    top: 10%;
 }
