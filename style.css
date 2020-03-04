@@ -2,8 +2,6 @@ body{
     font-family: 'Fredoka One', cursive;
 }
 
-
-
 .about-me{
     position: relative;
     height: 100vh;
@@ -60,9 +58,9 @@ body{
 
 .internships{
     position: relative;
-    height: 100vh;
+    height: 120vh;
     margin-top: -2px;
-    background-image: linear-gradient(to bottom, #220b28ff, white);
+    background-image: linear-gradient(to bottom, #220b28ff, rgb(114, 114, 235));
 }
 
 .internship-header{
@@ -72,24 +70,7 @@ body{
     color: white;
 }
 
-.internship-container{
-    position: absolute;
-    top: 15%;
-}
 
-.card-panel{
-    width: 100%;
-}
-
-.internship-first-row{
-    position: absolute;
-    top: 20%;
-}
-
-.internship-second-row{
-    position: absolute;
-    top: 90%;
-}
 
 .projects{
     
@@ -107,4 +88,24 @@ body{
 .project-list{
     position: absolute;
     top: 10%;
+}
+
+.dark-grass{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.light-grass{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mountain{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    height: 100%;
 }
