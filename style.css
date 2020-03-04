@@ -73,16 +73,15 @@ body{
 
 
 .projects{
-    
     height: 100vh;
-    background-image: linear-gradient(white, #220b28ff);
+    background-image: linear-gradient(rgba(24, 32, 70), #220b28ff);
 }
 
 .project-header{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: black;
+    color: white;
 }
 
 .project-list{
@@ -108,4 +107,45 @@ body{
     right: 0;
     width: 40vw;
     height: 100%;
+}
+
+.climber-tent{
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    width: 20vw;
+    cursor: pointer;
+}
+
+.rtg-tent{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    width: 20vw;
+    cursor: pointer;
+}
+
+.wcl-tent{
+    position: absolute;
+    bottom: 5%;
+    right: 8%;
+    width: 20vw;
+    cursor: pointer;
+}
+
+.logicnxt-tent{
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    width: 20vw;
+    cursor: pointer;
+}
+
+.internship-text{
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
 }

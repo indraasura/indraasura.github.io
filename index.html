@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -51,9 +51,65 @@
     <!--Internship section start-->
     <div class="internships" id="internships">
         <h1 class="internship-header">Internships</h1>
+        <!--background-->
         <img src="https://www.isohack.in/static/media/waterfall.0273a01a.png" class="mountain">
         <img src="https://www.isohack.in/static/media/light-grass.e8ecf56d.png" class="light-grass">
         <img src="https://www.isohack.in/static/media/dark-grass.da730635.png" class="dark-grass">
+        <p class="internship-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+        <!--internship details-->
+        <img href="#modal1" src="https://www.isohack.in/static/media/tent.a77c122d.png"
+            class="climber-tent modal-trigger">
+        <img href="#modal2" src="https://www.isohack.in/static/media/tent.a77c122d.png" class="rtg-tent modal-trigger">
+        <img href="#modal3" src="https://www.isohack.in/static/media/tent.a77c122d.png" class="wcl-tent modal-trigger">
+        <img href="#modal4" src="https://www.isohack.in/static/media/tent.a77c122d.png"
+            class="logicnxt-tent modal-trigger">
+
+        <!--internship modals-->
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
     </div>
     <!--Internship section end-->
 
@@ -110,6 +166,10 @@
         });
         $(document).ready(function () {
             $('.carousel').carousel();
+        });
+
+        $(document).ready(function () {
+            $('.modal').modal();
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
