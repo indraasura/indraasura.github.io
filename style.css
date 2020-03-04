@@ -74,7 +74,7 @@ body{
 
 .projects{
     height: 100vh;
-    background-image: linear-gradient(rgba(24, 32, 70), #220b28ff);
+    background-image: linear-gradient(#02244aff, #220b28ff);
 }
 
 .project-header{
@@ -84,9 +84,21 @@ body{
     color: white;
 }
 
-.project-list{
+.tech-stack{
     position: absolute;
-    top: 10%;
+    left: 8%;
+    height: 70vh;
+    margin-top: 10%;
+}
+
+.tech-stack-text{
+    position: absolute;
+    margin-top: 20%;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-10%);
 }
 
 .dark-grass{
