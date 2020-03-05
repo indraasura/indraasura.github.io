@@ -86,9 +86,8 @@ body{
 
 .tech-stack{
     position: absolute;
-    left: 8%;
-    height: 70vh;
-    margin-top: 10%;
+    left: 2%; 
+    margin-top: 30%;
 }
 
 .tech-stack-text{
