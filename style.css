@@ -181,3 +181,32 @@ body{
     transform: translateX(-50%);
     bottom: 100;
 }
+
+.blue-egg{
+    position: absolute;
+    top: 58%;
+    left: 27%;
+    width: 5vw;
+}
+
+
+.pink-egg{
+    position: absolute;
+    top: 80%;
+    left: 39%;
+    width: 5vw;
+}
+
+.stripe-egg{
+    position: absolute;
+    top: 75%;
+    left: 63%;
+    width: 5vw;
+}
+
+.yellow-egg{
+    position: absolute;
+    top: 54%;
+    right: 26%;
+    width: 5vw;
+}
