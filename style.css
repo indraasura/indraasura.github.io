@@ -14,63 +14,46 @@ body{
     }
 }
 
-
-
-.dark-img{
-    position: absolute;
-    bottom: 0;
-    height: 20vw;
-    width: 100%;
-}
-.light-img{
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-}
-
-.pink-img{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20vw;
-    margin-left: -4px;
-}
-
 .about-me-greeting{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 21%;
 }
 
 .about-me-text{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 37%;
+    top: 28%;
 }
 
 .arrow{
     position: absolute;
     left: 47%;
-    top: 50%;
+    top: 40%;
 }
 
 .internships{
     position: relative;
     height: 120vh;
     margin-top: -2px;
-    background-image: linear-gradient(to bottom, #220b28ff, rgb(114, 114, 235));
+    background-image: linear-gradient(to bottom, #ecebecff, rgb(1, 70, 149));
 }
 
 .internship-header{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: rgb(42, 6, 53);
 }
 
-
+.about-me-bg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .projects{
     height: 100vh;
@@ -155,7 +138,7 @@ body{
 .internship-text{
     position: absolute;
     font-size: 28px;
-    color: white;
+    color: black;
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
