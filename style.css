@@ -14,24 +14,34 @@ body{
     }
 }
 
+.nav-wrapper{
+    background:#d6e2e2ff;
+}
+
+.nav-links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .about-me-greeting{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 21%;
+    top: 15%;
 }
 
 .about-me-text{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 28%;
+    top: 22%;
 }
 
 .arrow{
     position: absolute;
     left: 47%;
-    top: 40%;
+    top: 30%;
 }
 
 .internships{
@@ -142,4 +152,32 @@ body{
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
+}
+
+.new-projects{
+    position: relative;
+    height: 160vh;
+    background-image: linear-gradient(#220b28ff, rgb(186, 242, 250));
+}
+
+
+.project-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project-body{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15%;    
+    font-size: 28px;
+}
+
+.project-bg-img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100;
 }
