@@ -1,292 +1,77 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <title>
+        Swarup Hegde
+    </title>
 </head>
 
 <body>
-    <!--Navbar start-->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="nav-links hide-on-med-and-down">
-                <li><a class="black-text" href="#about-me">About Me</a></li>
-                <li><a class="black-text" href="#internships">Internships</a></li>
-                <li><a class="black-text" href="#technical-stack">Technical Stack</a></li>
-                <li><a class="black-text" href="#projects">Projects</a></li>
-                <li><a class="black-text" href="#media-links">Media links</a></li>
-                <li><a class="black-text" href="#resume">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--Navbar end-->
+    <div class="nav-div">
+        <!--Navbar start-->
+        <nav>
+            <div class="nav-wrapper white">
+                <a href="#!" class="brand-logo grey-text">Swarup</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="links hide-on-med-and-down">
+                    <li><a class="grey-text text-darken-1" href="sass.html">Home</a></li>
+                    <li><a class="grey-text text-darken-1" href="badges.html">About Me</a></li>
+                    <li><a class="grey-text text-darken-1" href="collapsible.html">Internships</a></li>
+                    <li><a class="grey-text text-darken-1" href="mobile.html">Projects</a></li>
+                    <li><a class="grey-text text-darken-1" href="mobile.html">Resume</a></li>
+                    <li><a class="grey-text text-darken-1" href="mobile.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <!--Sidenav start-->
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-    </ul>
-    <!--Sidenav end-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+        <script>
 
-    <!--Main content-->
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
 
-    <!--About me section start-->
-    <div class="about-me" id="about-me">
-        <img src="darkbg.png" class="about-me-bg">
-        <h2 class="about-me-greeting">Hi There!</h2>
-        <h2 class="about-me-text">I am Swarup Hegde</h2>
-        <a class="arrow grey-text text-darken-1" href="#internships"><i
-                class="large material-icons">arrow_drop_down</i></a>
+        </script>
+        <!--Navbar end-->
     </div>
-    <!--About me section end-->
+    <div class="home grey lighten-2">
 
-    <!--Internship section start-->
-    <div class="internships" id="internships">
-        <h1 class="internship-header">Internships</h1>
-        <!--background-->
-        <img src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/waterfall.png" class="mountain">
-        <img src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/light-grass.png" class="light-grass">
-        <img src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/dark-grass.png" class="dark-grass">
-        <p class="internship-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
-        <!--internship details-->
-        <img href="#climber" src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/tent.png"
-            class="climber-tent modal-trigger">
-        <img href="#rtg" src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/tent.png" class="rtg-tent modal-trigger">
-        <img href="#wcl" src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/tent.png" class="wcl-tent modal-trigger">
-        <img href="#logicnxt" src="https://raw.githubusercontent.com/isohack/hackathon-webapp/master/src/img/tent.png"
-            class="logicnxt-tent modal-trigger">
 
-        <!--internship modals-->
-
-        <div id="climber" class="modal">
-            <div class="modal-content">
-                <h4 class="header center">The Climber - MyCaptain</h4>
-                <table class="highlight centered">
-                    <thead>
-                      <tr>
-                          <th>Parameters</th>
-                          <th>Data</th>
-                      </tr>
-                    </thead>
-            
-                    <tbody>
-                      <tr>
-                        <td>Duration</td>
-                        <td>Ongoing</td>
-                      </tr>
-                      <tr>
-                        <td>Role</td>
-                        <td>Web development Subject Matter Expert(SME)</td>
-                      </tr>
-                      <tr>
-                        <td>Location</td>
-                        <td>Bengaluru, Work from home</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                        
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
-        </div>
-
-        <div id="rtg" class="modal">
-            <div class="modal-content">
-                <h4>R.T.G Studios</h4>
-                <table class="highlight centered">
-                    <thead>
-                      <tr>
-                          <th>Parameters</th>
-                          <th>Data</th>
-                      </tr>
-                    </thead>
-            
-                    <tbody>
-                      <tr>
-                        <td>Duration</td>
-                        <td>2 months</td>
-                      </tr>
-                      <tr>
-                        <td>Role</td>
-                        <td>React JS, React Native developer</td>
-                      </tr>
-                      <tr>
-                        <td>Location</td>
-                        <td>Pune, Work from home</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
-        </div>
-
-        <div id="wcl" class="modal">
-            <div class="modal-content">
-                <h4>White Code Labs</h4>
-                <table class="highlight centered">
-                    <thead>
-                      <tr>
-                          <th>Parameters</th>
-                          <th>Data</th>
-                      </tr>
-                    </thead>
-            
-                    <tbody>
-                      <tr>
-                        <td>Duration</td>
-                        <td>2 months</td>
-                      </tr>
-                      <tr>
-                        <td>Role</td>
-                        <td>Full stack developer</td>
-                      </tr>
-                      <tr>
-                        <td>Location</td>
-                        <td>Palo Alto, California, Work from home</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
-        </div>
-
-        <div id="logicnxt" class="modal">
-            <div class="modal-content">
-                <h4>Logicnxt</h4>
-                <table class="highlight centered">
-                    <thead>
-                      <tr>
-                          <th>Parameters</th>
-                          <th>Data</th>
-                      </tr>
-                    </thead>
-            
-                    <tbody>
-                      <tr>
-                        <td>Duration</td>
-                        <td>4 months</td>
-                      </tr>
-                      <tr>
-                        <td>Role</td>
-                        <td>Graphic Designer and Digital Marketing</td>
-                      </tr>
-                      <tr>
-                        <td>Location</td>
-                        <td>Ahemedabad, Work from home</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
-        </div>
-
-    </div>
-    <!--Internship section end-->
-
-    <!--Projects section start-->
-    <div class="projects" id="technical-stack">
-        <h1 class="project-header">Technical Stack</h1>
+        <!--Intro text-->
         <div class="row">
-            <div class="col s12 m6 l6">
-                <div class="carousel tech-stack">
-                    <a class="carousel-item" href="#one!"><img src="https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png"></a>
-                    <a class="carousel-item" href="#two!"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"></a>
-                    <a class="carousel-item" href="#three!"><img src="https://seeklogo.com/images/M/materialize-logo-0FCAD8A6F8-seeklogo.com.png"></a>
-                    <a class="carousel-item" href="#four!"><img src="https://www.fullstackpython.com/img/logos/scipy.png"></a>
-                    <a class="carousel-item" href="#five!"><img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png"></a>
-                    <a class="carousel-item" href="#six!"><img src="https://cdn.freebiesupply.com/logos/large/2x/django-logo-png-transparent.png"></a>
+            <div class="col s12 m4 l4">
+                <div class="card-panel z-depth-0 grey lighten-2">
+                    <h1 class="intro-text">If I don't have to do it, I won't do it.<br>If I have to do it, I'll make it quick.</h1><br><br><br><br><br>
+                    <p class="accolades grey-text text-darken-1"><strong class="black-text">Smart India Hackathon 2017</strong> Top 7</p>
+                    <p class="accolades grey-text text-darken-1"><strong class="black-text">Pune Smart City Hackathon 2018</strong> Finalist</p>
+                    <p class="accolades grey-text text-darken-1"><strong class="black-text">VoidHacks() 2019</strong> Finalist</p>
+                    <p class="accolades grey-text text-darken-1"><strong class="black-text">Smart India Hackathon 2019</strong> Winner</p>
+                    <p class="accolades grey-text text-darken-1"><strong class="black-text">Version Beta 2019</strong> Finalist</p>
+                    <p class="accolades grey-text text-darken-1"><strong class="black-text">Isohack 2020</strong> Organizer</p>
                 </div>
             </div>
-            <div class="col s12 m6 l6">
-                <p class="tech-stack-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-
-        </div>        
-    </div>
-    <!--Projects section end-->
-
-
-    <!--Actual projects section start-->
-    <div class="new-projects" id="projects">
-        <h1 class="white-text project-title">Projects</h1>
-        <p class="black-text project-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
-        <img src="projectsbg.png" class="project-bg-img">
-        <img src="blue-egg.png" class="blue-egg">
-        <img src="pink-egg.png" class="pink-egg">
-        <img src="stripe-egg.png" class="stripe-egg">
-        <img src="yellow-egg.png" class="yellow-egg">
-    </div>
-    <!--Actual projects section end-->
-
-
-    <!--Footer start-->
-    <footer class="page-footer black">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Connect with me</h5>
-                    <p class="grey-text text-lighten-4">Hey! I would like to know more about your passion and what
-                        drives you. Let's connect.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Social Links</h5>
-                    <ul>
-                        <li><a class="white-text" href="https://github.com/indraasura">GitHub</a></li>
-                        <li><a class="white-text" href="https://linkedin.com/swarup-hegde">LinkedIn</a></li>
-                        <li><a class="white-text" href="https://instagram.com/swarup_hegde">Instagram</a></li>
-                        <li><a class="white-text" href="https://twitter.com/swarup-hegde">Twitter</a></li>
-                    </ul>
+            <div class="col s12 m8 l8">
+                <div class="card-panel intro-container z-depth-0 black lighten-2">
+                    
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2020 Copyright Text
-            </div>
-        </div>
-    </footer>
-    <!--Footer end-->
 
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-        $(document).ready(function () {
-            $('.carousel').carousel();
-        });
+    </div>
 
-        $(document).ready(function () {
-            $('.modal').modal();
-        });
-    </script>
+    <!--About me start-->
+    <div class="about grey lighten-4"></div>
+    <!--About me end-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 

@@ -1,212 +1,48 @@
-body{
-    font-family: 'Fredoka One', cursive;
+.nav-div{
+    position: relative;
+    height: 20vh;
 }
 
-.about-me{
+.home{
     position: relative;
+    height: auto;
+}
+.brand-logo{
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.links{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+nav .nav-wrapper{
+    height: 20vh;
+}
+
+.about{
+    position: relative;
+    height: 70vh;
+}
+
+.intro-text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accolades{
+    font-size: medium;
+}
+
+strong{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-container{
+    position: relative;
+}
+
+.intro-container{
     height: 100vh;
-    background-image: linear-gradient(45deg, #D3CCE3, #E9E4F0);
-}
-
-@media screen and (min-width: 755px){
-    .light-img{
-        width: 30vw;
-    }
-}
-
-.nav-wrapper{
-    background:#d6e2e2ff;
-}
-
-.nav-links{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.about-me-greeting{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15%;
-}
-
-.about-me-text{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 22%;
-}
-
-.arrow{
-    position: absolute;
-    left: 47%;
-    top: 30%;
-}
-
-.internships{
-    position: relative;
-    height: 120vh;
-    margin-top: -2px;
-    background-image: linear-gradient(to bottom, #ecebecff, rgb(1, 70, 149));
-}
-
-.internship-header{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(42, 6, 53);
-}
-
-.about-me-bg{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.projects{
-    height: 100vh;
-    background-image: linear-gradient(#02244aff, #220b28ff);
-}
-
-.project-header{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-}
-
-.tech-stack{
-    position: absolute;
-    left: 2%; 
-    margin-top: 30%;
-}
-
-.tech-stack-text{
-    position: absolute;
-    margin-top: 20%;
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    left: 50%;
-    transform: translateX(-10%);
-}
-
-.dark-grass{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.light-grass{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.mountain{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 40vw;
-    height: 100%;
-}
-
-.climber-tent{
-    position: absolute;
-    bottom: 10%;
-    left: 8%;
-    width: 20vw;
-    cursor: pointer;
-}
-
-.rtg-tent{
-    position: absolute;
-    bottom: 5%;
-    left: 30%;
-    width: 20vw;
-    cursor: pointer;
-}
-
-.wcl-tent{
-    position: absolute;
-    bottom: 5%;
-    right: 8%;
-    width: 20vw;
-    cursor: pointer;
-}
-
-.logicnxt-tent{
-    position: absolute;
-    bottom: 10%;
-    right: 30%;
-    width: 20vw;
-    cursor: pointer;
-}
-
-.internship-text{
-    position: absolute;
-    font-size: 28px;
-    color: black;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-}
-
-.new-projects{
-    position: relative;
-    height: 160vh;
-    background-image: linear-gradient(#220b28ff, rgb(186, 242, 250));
-}
-
-
-.project-title{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.project-body{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 15%;    
-    font-size: 28px;
-}
-
-.project-bg-img{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 100;
-}
-
-.blue-egg{
-    position: absolute;
-    top: 58%;
-    left: 27%;
-    width: 5vw;
-}
-
-
-.pink-egg{
-    position: absolute;
-    top: 80%;
-    left: 39%;
-    width: 5vw;
-}
-
-.stripe-egg{
-    position: absolute;
-    top: 75%;
-    left: 63%;
-    width: 5vw;
-}
-
-.yellow-egg{
-    position: absolute;
-    top: 54%;
-    right: 26%;
-    width: 5vw;
 }
