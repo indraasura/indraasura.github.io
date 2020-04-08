@@ -22,9 +22,26 @@ nav .nav-wrapper{
     height: 20vh;
 }
 
+@media only screen and (min-width: 755px){
+    .about{
+        height: 52vh;
+    }
+    .about-text{
+        transform: translateY(30%);
+    }
+}
+
+@media only screen and (max-width: 755px){
+    .about{
+        height: auto;
+    }
+    
+}
+
+
 .about{
     position: relative;
-    height: auto;
+    margin-top: -8px;
 }
 
 .intro-text{
@@ -70,4 +87,15 @@ strong{
 .fa-links{
     font-size: 24px;
     color: black;
+}
+.about-text{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.logo-img{
+    position: absolute;
+    width: 20vw;
+    right: 8%;
+    top: 10%;
 }
