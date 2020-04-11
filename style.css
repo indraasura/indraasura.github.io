@@ -3,9 +3,21 @@
     height: 20vh;
 }
 
+@media only screen and (max-width: 755px){
+    .home{
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 755px){
+    .home{
+        height: 100vh;
+    }
+}
+
 .home{
     position: relative;
-    height: auto;
+    background-color: #2A2B30;
 }
 .brand-logo{
     top: 50%;
@@ -20,42 +32,12 @@
 }
 nav .nav-wrapper{
     height: 20vh;
-}
-
-@media only screen and (min-width: 755px){
-    .about{
-        height: 52vh;
-        
-    }
-    .internships{
-        height: auto;
-    }
-    .about-text{
-        transform: translateY(30%);
-    }
-}
-
-@media only screen and (max-width: 755px){
-    .about{
-        height: 100vh;
-    }
-    .internships{
-        height: auto;
-    }     
-}
-
-.internships{
-    position: relative;
-    
-}
-
-.about{
-    position: relative;
-    margin-top: -8px;
+    background-color: #CECECE;
 }
 
 .intro-text{
     font-family: 'Montserrat', sans-serif;
+    color: #CECECE;
 }
 
 .accolades{
@@ -64,6 +46,8 @@ nav .nav-wrapper{
 
 strong{
     font-family: 'Montserrat', sans-serif;
+    color: #CECECE;
+
 }
 
 .profile{
@@ -83,6 +67,8 @@ strong{
 .description{
     font-size: large;
     font-family: 'Montserrat', sans-serif;
+    color: #CECECE;
+
 }
 
 .vertical-line-down{
@@ -95,78 +81,5 @@ strong{
 
 .fa-links{
     font-size: 24px;
-    color: black;
+    color: #CECECE;
 }
-.about-text{
-    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-}
-.logo-img{
-    position: absolute;
-    width: 20vw;
-    right: 8%;
-    top: 10%;
-}
-
-
-@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
-
-
- button {
-	 position: relative;
-	 display: inline-block;
-	 cursor: pointer;
-	 outline: none;
-	 border: 0;
-	 vertical-align: middle;
-	 text-decoration: none;
-	 font-size: inherit;
-	 font-family: inherit;
-}
- button.learn-more {
-	 font-weight: 600;
-	 color: #382b22;
-	 text-transform: uppercase;
-	 padding: 1.25em 2em;
-	 background: white;
-	 border: 2px solid black;
-	 border-radius: 0.75em;
-	 transform-style: preserve-3d;
-	 transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-}
- button.learn-more::before {
-	 position: absolute;
-	 content: '';
-	 width: 100%;
-	 height: 100%;
-	 top: 0;
-	 left: 0;
-	 right: 0;
-	 bottom: 0;
-	 background: black;
-	 border-radius: inherit;
-	 box-shadow: 0 0 0 2px black, 0 0.625em 0 0 grey;
-	 transform: translate3d(0, 0.75em, -1em);
-	 transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
- button.learn-more:hover {
-	 background: grey;
-	 transform: translate(0, 0.25em);
-}
- button.learn-more:hover::before {
-	 box-shadow: 0 0 0 2px black, 0 0.5em 0 0 grey;
-	 transform: translate3d(0, 0.5em, -1em);
-}
- button.learn-more:active {
-	 background: grey;
-	 transform: translate(0em, 0.75em);
-}
- button.learn-more:active::before {
-	 box-shadow: 0 0 0 2px black, 0 0 grey;
-	 transform: translate3d(0, 0, -1em);
-}
- 
-
-
-
