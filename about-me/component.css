@@ -54,15 +54,15 @@ body {
 
 .side-left {
 	left: 0;
-	background: #47a3da;
+	background: #2A2B30;
 	color: #fff;
-	outline: 1px solid #47a3da; /* avoid gap */
+	outline: 1px solid #2A2B30; /* avoid gap */
 }
 
 .side-right {
 	right: 0;
 	background: #fff;
-	color: #47a3da;
+	color: black;
 	outline: 1px solid #fff; /* avoid gap */
 }
 

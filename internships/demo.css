@@ -19,9 +19,9 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: #47a3da;
+    background: #2A2B30;
 }
 
 a {
@@ -148,7 +148,7 @@ a:hover {
 }
 
 .bp-icon-next:after {
-	content: "\e000";
+	content: "\003E";
 }
 .bp-icon-drop:after {
 	content: "\e001";
@@ -160,7 +160,7 @@ a:hover {
 	content: "\e003";
 }
 .bp-icon-prev:after {
-	content: "\e004";
+	content: "\003C";
 }
 
 @media screen and (max-width: 55em) {
@@ -182,4 +182,9 @@ a:hover {
 	.container > header > span {
 		text-indent: 30px;
 	}
+}
+
+strong{
+	color: #47a3da;
+	
 }

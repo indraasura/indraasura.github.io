@@ -50,7 +50,7 @@ strong{
 
 }
 
-.profile{
+.profile-home{
     position: absolute;
     height: 90vh;
     left: 48%;
@@ -83,3 +83,5 @@ strong{
     font-size: 24px;
     color: #CECECE;
 }
+
+

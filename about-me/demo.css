@@ -154,7 +154,7 @@ a:hover {
 }
 
 .bp-icon-next:after {
-	content: "\e000";
+	content: "\003E";
 }
 .bp-icon-drop:after {
 	content: "\e001";
@@ -166,7 +166,7 @@ a:hover {
 	content: "\e003";
 }
 .bp-icon-prev:after {
-	content: "\e004";
+	content: "\003C";
 }
 
 .demos {
