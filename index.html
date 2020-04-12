@@ -1,107 +1,160 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Mobile-Friendly Multi-Level Menu</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level sidebar menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, sidebar, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://use.fontawesome.com/de51e577bc.js"></script>
 
-    <script src="https://use.fontawesome.com/de51e577bc.js"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<!-- food icons -->
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="./home/demo.css" />
+	<!-- menu styles -->
+    <link rel="stylesheet" type="text/css" href="./home/component.css" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <title>
-        Swarup Hegde
-    </title>
+	<script src="./home/modernizr.custom.js"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
 </head>
 
 <body>
-    <div class="nav-div">
-        <!--Navbar start-->
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo black-text">Swarup</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="links hide-on-med-and-down">
-                    <li><a class="black-text" href="#home">Home</a></li>
-                    <li><a class="black-text" href="./views/about-me.html">About Me</a></li>
-                    <li><a class="black-text" href="./views/internships.html">Internships</a></li>
-                    <li><a class="black-text" href="./views/projects.html">Projects</a></li>
-                    <li><a class="black-text" href="#resume">Resume</a></li>
-                    <li><a class="black-text" href="./views/blog.html">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">Swarup Hegde</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">Swarup Hegde</span>				
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu">></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu">x</button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level">
+					<li class="menu__item"><a class="menu__link" href="./views/about-me.html">About Me</a></li>
+					<li class="menu__item"><a class="menu__link" href="./views/internships.html">Internships</a></li>
+					<li class="menu__item"><a class="menu__link" href="./views/projects.html">Projects</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Resume</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Technical Stack</a></li>
+					<li class="menu__item"><li><a class="fa-links menu__link" href="https://www.github.com/indraasura"><i class="fa fa-github"
+						aria-hidden="true"></i> Github</a></li>
+						<li class="menu__item"><li><a class="fa-links menu__link" href="https://www.linkedin.com/in/swarup-hegde-588071183/"><i class="fa fa-linkedin"
+							aria-hidden="true"></i> LinkedIn</a></li>
+							<li class="menu__item"><li><a class="fa-links menu__link" href="https://www.instagram.com/swarup_hegde"><i class="fa fa-instagram"
+								aria-hidden="true"></i> Instagram</a></li>
+								<li class="menu__item"><li><a class="fa-links menu__link" href="https://www.twitter.com/swaruphegde"><i class="fa fa-twitter"
+									aria-hidden="true"></i> Twitter</a></li>
+									<li><a class="fa-links menu__link" href="mailto: swaruphegde@gmail.com"><i class="fa fa-envelope-open-o"
+										aria-hidden="true"></i> Email</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			
+			<div class="home" id="home">
 
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <script>
 
-            $(document).ready(function () {
-                $('.sidenav').sidenav();
-            });
-
-        </script>
-        <!--Navbar end-->
-    </div>
-    <div class="home" id="home">
-
-
-        <!--Intro text-->
-        <div class="row">
-            <div class="col s12 m12 l4">
-                <div class="card-panel z-depth-0" style="background-color: #2A2B30;">
-                    <h1 class="intro-text">If I don't have to do it, I won't do it.<br>If I have to do it, I'll make it
-                        quick.</h1><br><br><br><br><br>
-                    <p class="accolades grey-text text-darken-1"><strong>Smart India Hackathon
-                            2017 </strong> Top 7</p>
-                    <p class="accolades grey-text text-darken-1"><strong>Pune Smart City Hackathon
-                            2018 </strong> Finalist</p>
-                    <p class="accolades grey-text text-darken-1"><strong>VoidHacks() 2019 </strong>
-                        Finalist</p>
-                    <p class="accolades grey-text text-darken-1"><strong>Smart India Hackathon
-                            2019 </strong> Winner</p>
-                    <p class="accolades grey-text text-darken-1"><strong>Version Beta 2019 </strong>
-                        Finalist</p>
-                    <p class="accolades grey-text text-darken-1"><strong>Isohack 2020 </strong>
-                        Organizer</p>
+                <!--Intro text-->
+                <div class="row">
+                    <div class="col s12 m12 l4">
+                        <div class="card-panel z-depth-0" style="background-color: #2A2B30;">
+                            <h1 class="intro-text">If I don't have to do it, I won't do it.<br>If I have to do it, I'll make it
+								quick.</h1>
+							<div class="accolades-container">
+								<p class="accolades grey-text text-darken-1"><strong>Smart India Hackathon
+                                    2017 </strong> Top 7</p>
+                            <p class="accolades grey-text text-darken-1"><strong>Pune Smart City Hackathon
+                                    2018 </strong> Finalist</p>
+                            <p class="accolades grey-text text-darken-1"><strong>VoidHacks() 2019 </strong>
+                                Finalist</p>
+                            <p class="accolades grey-text text-darken-1"><strong>Smart India Hackathon
+                                    2019 </strong> Winner</p>
+                            <p class="accolades grey-text text-darken-1"><strong>Version Beta 2019 </strong>
+                                Finalist</p>
+                            <p class="accolades grey-text text-darken-1"><strong>Isohack 2020 </strong>
+                                Organizer</p>
+							</div>
+                            
+                        </div>
+                    </div>
+                    <div class="col l8">
+                        <img src="profile.png" class="profile-home">
+                    </div>
                 </div>
             </div>
-            <div class="col l8">
-                <img src="profile.png" class="profile-home hide-on-med-and-down">
-                <div class="vertical-line hide-on-med-and-down">
-                    <ul class="description">
-                        <li>Full stack developer</li><br><br>
-                        <li>Graphic Designer</li><br><br>
-                        <li>Sketch artist</li><br><br>
-                        <li>Python enthusiast</li><br><br>
-                        <li>Open Source Contributor</li>
-                    </ul>
-                </div>
-                <div class="vertical-line-down hide-on-med-and-down">
-                    <ul class="description">
-                        <li><a class="fa-links" href="https://www.github.com/indraasura"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a> Github
-                        </li><br>
-                        <li><a class="fa-links" href="https://www.linkedin.com/in/swarup-hegde-588071183/"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a> LinkedIn</li><br>
-                        <li><a class="fa-links" href="https://www.twitter.com/swaruphegde"><i class="fa fa-twitter"
-                                    aria-hidden="true"></i></a> Twitter</li><br>
-                        <li><a class="fa-links" href="https://www.instagram.com/swarup_hegde"><i class="fa fa-instagram"
-                                    aria-hidden="true"></i></a> Instagram</li><br>
-                        <li><a class="fa-links" href="mailto: swaruphegde@gmail.com"><i class="fa fa-envelope-open-o"
-                                    aria-hidden="true"></i></a> Email</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="./home/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="./home/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+	
+
+<!-- For the demo ad only -->   
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+
 </body>
 
 </html>
