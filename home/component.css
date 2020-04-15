@@ -22,7 +22,7 @@
 }
 
 .icon--arrow-left:before {
-	content: '\e901';
+	content: '<';
 }
 
 .icon--menu:before {
@@ -30,7 +30,7 @@
 }
 
 .icon--cross:before {
-	content: '\e117';
+	content: 'x';
 }
 
 
