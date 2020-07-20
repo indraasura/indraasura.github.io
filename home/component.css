@@ -42,7 +42,7 @@
 	left: 0;
 	width: 300px;
 	height: calc(100vh - 120px);
-	background: #1c1d22;
+	background-image:linear-gradient(-45deg, #240b36, #c31432); /* side nav bottom color */
 }
 
 .menu__wrap {
@@ -81,7 +81,7 @@
 	position: relative;
 	display: block;
 	padding: 1em 2.5em 1em 1.5em;
-	color: #bdbdbd;
+	color: white;
 	-webkit-transition: color 0.1s;
 	transition: color 0.1s;
 }
@@ -97,7 +97,7 @@
 
 .menu__link:hover,
 .menu__link[data-submenu]:hover::after {
-	color: #5c5edc;
+	color: black;
 }
 
 .menu__link--current::before {
@@ -228,13 +228,14 @@
 }
 
 .menu__breadcrumbs a {
-	font-weight: bold;
+	font-weight: 900;
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: middle;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #5c5edc;
+	color: black;
+	font-size: 1.3em;
 }
 
 .menu__breadcrumbs a:last-child {

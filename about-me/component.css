@@ -54,14 +54,14 @@ body {
 
 .side-left {
 	left: 0;
-	background: #2A2B30;
+	background: #240b36;
 	color: #fff;
 	outline: 1px solid #2A2B30; /* avoid gap */
 }
 
 .side-right {
 	right: 0;
-	background: #fff;
+	background: #FFEFBA;
 	color: black;
 	outline: 1px solid #fff; /* avoid gap */
 }
@@ -187,7 +187,7 @@ body {
 .page-right {
 	left: 25%;
 	outline: 5px solid #ecf0f1; /* avoid rounding gaps */
-	background: #ecf0f1;
+	background: white;
 	color: #97a8b2;
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
@@ -200,7 +200,7 @@ body {
 .page-left {
 	left: 0;
 	outline: 5px solid #34495e; /* avoid rounding gaps */
-	background: #34495e;
+	background: #c31432;
 	color: #fff;
 	text-align: right;
 	-webkit-transform: translateX(-100%);

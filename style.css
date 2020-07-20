@@ -3,7 +3,7 @@
     .home{
         height: 90vh;
     }
-    .profile-home{
+    .profile-home, .introbg{
         display: none;
     }
 }
@@ -21,16 +21,17 @@
 
 .home{
     position: relative;
-    background-color: #2A2B30;
+    background-image: linear-gradient(to top, #FFEFBA, #FFFFFF);
 }
 
 
 .intro-text{
     position: absolute;
     font-size: 40px;
+    top: 10%;
     left: 10%;
     font-family: 'Montserrat', sans-serif;
-    color: #CECECE;
+    color: black;
 }
 
 .accolades-container{
@@ -41,11 +42,12 @@
 
 .accolades{
     font-size: 20px;
+    color: rgb(90, 90, 90);
 }
 
 strong{
     font-family: 'Montserrat', sans-serif;
-    color: #CECECE;
+    color: black;
 
 }
 
@@ -55,7 +57,13 @@ strong{
     bottom: 0;
 }
 
-
+.introbg{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    right: 0;
+    height: 120%;
+}
 
 
 

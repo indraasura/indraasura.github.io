@@ -38,7 +38,7 @@ body {
 	overflow: hidden;
 	margin: 0;
 	color: #cecece;
-	background: #2a2b30;
+	background: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -70,6 +70,7 @@ a:hover {
 	margin: 0 0 0 auto;
 	padding: 2em 3em 0;
 	text-align: right;
+	
 }
 
 .bp-header__title {
@@ -90,7 +91,7 @@ a:hover {
 	text-indent: 3px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	color: #5c5edc;
+	color: black;
 }
 
 .bp-tooltip:after {
@@ -211,7 +212,7 @@ a:hover {
 	padding: 1em 0 0 0;
 	text-align: center;
 	color: #3b3d4a;
-	background: #1c1d22;
+	background-image: linear-gradient(to right, #FFEFBA, #FFFFFF);	
 }
 
 .dummy-icon {
