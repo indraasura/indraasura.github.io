@@ -1,28 +1,42 @@
-/* Modernizr 2.6.2 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-touch-shiv-cssclasses-teststyles-prefixes-load
+/* Modernizr 2.7.1 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-csstransforms3d-csstransitions-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load
  */
 (window.Modernizr = (function (a, b, c) {
-  function w(a) {
+  function z(a) {
     j.cssText = a;
   }
-  function x(a, b) {
-    return w(m.join(a + ";") + (b || ""));
+  function A(a, b) {
+    return z(m.join(a + ";") + (b || ""));
   }
-  function y(a, b) {
+  function B(a, b) {
     return typeof a === b;
   }
-  function z(a, b) {
+  function C(a, b) {
     return !!~("" + a).indexOf(b);
   }
-  function A(a, b, d) {
-    for (var e in a) {
-      var f = b[a[e]];
-      if (f !== c)
-        return d === !1 ? a[e] : y(f, "function") ? f.bind(d || b) : f;
+  function D(a, b) {
+    for (var d in a) {
+      var e = a[d];
+      if (!C(e, "-") && j[e] !== c) return b == "pfx" ? e : !0;
     }
     return !1;
   }
-  var d = "2.6.2",
+  function E(a, b, d) {
+    for (var e in a) {
+      var f = b[a[e]];
+      if (f !== c)
+        return d === !1 ? a[e] : B(f, "function") ? f.bind(d || b) : f;
+    }
+    return !1;
+  }
+  function F(a, b, c) {
+    var d = a.charAt(0).toUpperCase() + a.slice(1),
+      e = (a + " " + o.join(d + " ") + d).split(" ");
+    return B(b, "string") || B(b, "undefined")
+      ? D(e, b)
+      : ((e = (a + " " + p.join(d + " ") + d).split(" ")), E(e, b, c));
+  }
+  var d = "2.7.1",
     e = {},
     f = !0,
     g = b.documentElement,
@@ -32,13 +46,16 @@
     k,
     l = {}.toString,
     m = " -webkit- -moz- -o- -ms- ".split(" "),
-    n = {},
-    o = {},
-    p = {},
-    q = [],
-    r = q.slice,
-    s,
-    t = function (a, c, d, e) {
+    n = "Webkit Moz O ms",
+    o = n.split(" "),
+    p = n.toLowerCase().split(" "),
+    q = {},
+    r = {},
+    s = {},
+    t = [],
+    u = t.slice,
+    v,
+    w = function (a, c, d, e) {
       var f,
         i,
         j,
@@ -69,58 +86,55 @@
         !!i
       );
     },
-    u = {}.hasOwnProperty,
-    v;
-  !y(u, "undefined") && !y(u.call, "undefined")
-    ? (v = function (a, b) {
-        return u.call(a, b);
+    x = {}.hasOwnProperty,
+    y;
+  !B(x, "undefined") && !B(x.call, "undefined")
+    ? (y = function (a, b) {
+        return x.call(a, b);
       })
-    : (v = function (a, b) {
-        return b in a && y(a.constructor.prototype[b], "undefined");
+    : (y = function (a, b) {
+        return b in a && B(a.constructor.prototype[b], "undefined");
       }),
     Function.prototype.bind ||
       (Function.prototype.bind = function (b) {
         var c = this;
         if (typeof c != "function") throw new TypeError();
-        var d = r.call(arguments, 1),
+        var d = u.call(arguments, 1),
           e = function () {
             if (this instanceof e) {
               var a = function () {};
               a.prototype = c.prototype;
               var f = new a(),
-                g = c.apply(f, d.concat(r.call(arguments)));
+                g = c.apply(f, d.concat(u.call(arguments)));
               return Object(g) === g ? g : f;
             }
-            return c.apply(b, d.concat(r.call(arguments)));
+            return c.apply(b, d.concat(u.call(arguments)));
           };
         return e;
       }),
-    (n.touch = function () {
-      var c;
+    (q.csstransforms3d = function () {
+      var a = !!F("perspective");
       return (
-        "ontouchstart" in a || (a.DocumentTouch && b instanceof DocumentTouch)
-          ? (c = !0)
-          : t(
-              [
-                "@media (",
-                m.join("touch-enabled),("),
-                h,
-                ")",
-                "{#modernizr{top:9px;position:absolute}}",
-              ].join(""),
-              function (a) {
-                c = a.offsetTop === 9;
-              }
-            ),
-        c
+        a &&
+          "webkitPerspective" in g.style &&
+          w(
+            "@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",
+            function (b, c) {
+              a = b.offsetLeft === 9 && b.offsetHeight === 3;
+            }
+          ),
+        a
       );
+    }),
+    (q.csstransitions = function () {
+      return F("transition");
     });
-  for (var B in n)
-    v(n, B) &&
-      ((s = B.toLowerCase()), (e[s] = n[B]()), q.push((e[s] ? "" : "no-") + s));
+  for (var G in q)
+    y(q, G) &&
+      ((v = G.toLowerCase()), (e[v] = q[G]()), t.push((e[v] ? "" : "no-") + v));
   return (
     (e.addTest = function (a, b) {
-      if (typeof a == "object") for (var d in a) v(a, d) && e.addTest(d, a[d]);
+      if (typeof a == "object") for (var d in a) y(a, d) && e.addTest(d, a[d]);
       else {
         a = a.toLowerCase();
         if (e[a] !== c) return e;
@@ -132,10 +146,10 @@
       }
       return e;
     }),
-    w(""),
+    z(""),
     (i = k = null),
     (function (a, b) {
-      function k(a, b) {
+      function l(a, b) {
         var c = a.createElement("p"),
           d = a.getElementsByTagName("head")[0] || a.documentElement;
         return (
@@ -143,90 +157,93 @@
           d.insertBefore(c.lastChild, d.firstChild)
         );
       }
-      function l() {
-        var a = r.elements;
+      function m() {
+        var a = s.elements;
         return typeof a == "string" ? a.split(" ") : a;
       }
-      function m(a) {
-        var b = i[a[g]];
-        return b || ((b = {}), h++, (a[g] = h), (i[h] = b)), b;
+      function n(a) {
+        var b = j[a[h]];
+        return b || ((b = {}), i++, (a[h] = i), (j[i] = b)), b;
       }
-      function n(a, c, f) {
+      function o(a, c, d) {
         c || (c = b);
-        if (j) return c.createElement(a);
-        f || (f = m(c));
+        if (k) return c.createElement(a);
+        d || (d = n(c));
         var g;
         return (
-          f.cache[a]
-            ? (g = f.cache[a].cloneNode())
-            : e.test(a)
-            ? (g = (f.cache[a] = f.createElem(a)).cloneNode())
-            : (g = f.createElem(a)),
-          g.canHaveChildren && !d.test(a) ? f.frag.appendChild(g) : g
+          d.cache[a]
+            ? (g = d.cache[a].cloneNode())
+            : f.test(a)
+            ? (g = (d.cache[a] = d.createElem(a)).cloneNode())
+            : (g = d.createElem(a)),
+          g.canHaveChildren && !e.test(a) && !g.tagUrn
+            ? d.frag.appendChild(g)
+            : g
         );
       }
-      function o(a, c) {
+      function p(a, c) {
         a || (a = b);
-        if (j) return a.createDocumentFragment();
-        c = c || m(a);
+        if (k) return a.createDocumentFragment();
+        c = c || n(a);
         var d = c.frag.cloneNode(),
           e = 0,
-          f = l(),
+          f = m(),
           g = f.length;
         for (; e < g; e++) d.createElement(f[e]);
         return d;
       }
-      function p(a, b) {
+      function q(a, b) {
         b.cache ||
           ((b.cache = {}),
           (b.createElem = a.createElement),
           (b.createFrag = a.createDocumentFragment),
           (b.frag = b.createFrag())),
           (a.createElement = function (c) {
-            return r.shivMethods ? n(c, a, b) : b.createElem(c);
+            return s.shivMethods ? o(c, a, b) : b.createElem(c);
           }),
           (a.createDocumentFragment = Function(
             "h,f",
             "return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&(" +
-              l()
+              m()
                 .join()
-                .replace(/\w+/g, function (a) {
+                .replace(/[\w\-]+/g, function (a) {
                   return (
                     b.createElem(a), b.frag.createElement(a), 'c("' + a + '")'
                   );
                 }) +
               ");return n}"
-          )(r, b.frag));
+          )(s, b.frag));
       }
-      function q(a) {
+      function r(a) {
         a || (a = b);
-        var c = m(a);
+        var c = n(a);
         return (
-          r.shivCSS &&
-            !f &&
+          s.shivCSS &&
+            !g &&
             !c.hasCSS &&
-            (c.hasCSS = !!k(
+            (c.hasCSS = !!l(
               a,
-              "article,aside,figcaption,figure,footer,header,hgroup,nav,section{display:block}mark{background:#FF0;color:#000}"
+              "article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}"
             )),
-          j || p(a, c),
+          k || q(a, c),
           a
         );
       }
-      var c = a.html5 || {},
-        d = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,
-        e = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,
-        f,
-        g = "_html5shiv",
-        h = 0,
-        i = {},
-        j;
+      var c = "3.7.0",
+        d = a.html5 || {},
+        e = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,
+        f = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,
+        g,
+        h = "_html5shiv",
+        i = 0,
+        j = {},
+        k;
       (function () {
         try {
           var a = b.createElement("a");
           (a.innerHTML = "<xyz></xyz>"),
-            (f = "hidden" in a),
-            (j =
+            (g = "hidden" in a),
+            (k =
               a.childNodes.length == 1 ||
               (function () {
                 b.createElement("a");
@@ -238,29 +255,39 @@
                 );
               })());
         } catch (c) {
-          (f = !0), (j = !0);
+          (g = !0), (k = !0);
         }
       })();
-      var r = {
+      var s = {
         elements:
-          c.elements ||
-          "abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",
-        shivCSS: c.shivCSS !== !1,
-        supportsUnknownElements: j,
-        shivMethods: c.shivMethods !== !1,
+          d.elements ||
+          "abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video",
+        version: c,
+        shivCSS: d.shivCSS !== !1,
+        supportsUnknownElements: k,
+        shivMethods: d.shivMethods !== !1,
         type: "default",
-        shivDocument: q,
-        createElement: n,
-        createDocumentFragment: o,
+        shivDocument: r,
+        createElement: o,
+        createDocumentFragment: p,
       };
-      (a.html5 = r), q(b);
+      (a.html5 = s), r(b);
     })(this, b),
     (e._version = d),
     (e._prefixes = m),
-    (e.testStyles = t),
+    (e._domPrefixes = p),
+    (e._cssomPrefixes = o),
+    (e.testProp = function (a) {
+      return D([a]);
+    }),
+    (e.testAllProps = F),
+    (e.testStyles = w),
+    (e.prefixed = function (a, b, c) {
+      return b ? F(a, b, c) : F(a, "pfx");
+    }),
     (g.className =
       g.className.replace(/(^|\s)no-js(\s|$)/, "$1$2") +
-      (f ? " js " + q.join(" ") : "")),
+      (f ? " js " + t.join(" ") : "")),
     e
   );
 })(this, this.document)),

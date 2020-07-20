@@ -21,6 +21,7 @@
 
 .home{
     position: relative;
+    overflow: hidden;
     background-image: linear-gradient(to top, #FFEFBA, #FFFFFF);
 }
 
@@ -65,5 +66,31 @@ strong{
     height: 120%;
 }
 
+.mesh1{
+    position: absolute;
+    right: -10%;
+    width: 80%;
+    top: 5%;
+    opacity: 0.4;
+    animation: rotate 25s infinite linear;
+}
 
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 

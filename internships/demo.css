@@ -19,14 +19,18 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
     color: black;
-    background-image: linear-gradient(to bottom, #FFEFBA, white);
 }
 
 a {
 	color: #f0f0f0;
 	text-decoration: none;
+	outline: none;
+}
+
+.container{
+	background-image: linear-gradient(-45deg, #240b36, #c31432);
 }
 
 a:hover {
@@ -51,7 +55,7 @@ a:hover {
 .container > header > span {
 	display: block;
 	position: relative;
-	z-index: 9999;
+	z-index: 200;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
@@ -81,8 +85,8 @@ a:hover {
 	left: auto;
 	margin-left: 4px;
 	position: absolute;
-	color: #47a3da;
-	background: #fff;
+	color: #fff;
+	background: #47a3da;
 }
 
 .container > header nav {
@@ -96,10 +100,10 @@ a:hover {
 	text-align: left;
 	width: 2.5em;
 	height: 2.5em;
-	background: #47a3da;
+	background: #fff;
 	border-radius: 50%;
 	margin: 0 0.1em;
-	border: 4px solid #fff;
+	border: 4px solid #47a3da;
 }
 
 .container > header nav a > span {
@@ -108,7 +112,7 @@ a:hover {
 
 .container > header nav a:hover:before {
 	content: attr(data-info);
-	color: #fff;
+	color: #47a3da;
 	position: absolute;
 	width: 600%;
 	top: 120%;
@@ -118,7 +122,7 @@ a:hover {
 }
 
 .container > header nav a:hover {
-	background: #fff;
+	background: #c31432;
 }
 
 .bp-icon:after {
@@ -129,7 +133,7 @@ a:hover {
 	font-variant: normal;
 	text-transform: none;
 	text-align: center;
-	color: #fff;
+	color: #47a3da;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -144,23 +148,14 @@ a:hover {
 }
 
 .container > header nav a:hover:after {
-	color: #47a3da;
+	color: #fff;
 }
 
 .bp-icon-next:after {
-	content: "\003E";
-}
-.bp-icon-drop:after {
-	content: "\e001";
-}
-.bp-icon-archive:after {
-	content: "\e002";
-}
-.bp-icon-about:after {
-	content: "\e003";
+	content: ">";
 }
 .bp-icon-prev:after {
-	content: "\003C";
+	content: "<";
 }
 
 @media screen and (max-width: 55em) {
@@ -182,9 +177,4 @@ a:hover {
 	.container > header > span {
 		text-indent: 30px;
 	}
-}
-
-strong{
-	color: #47a3da;
-	
 }
