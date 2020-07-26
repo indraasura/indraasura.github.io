@@ -305,7 +305,7 @@
 	top: 1em;
 	left: 1em;
 	display: none;
-	color: #fff;
+	color: black;
 	position: fixed;
 	z-index: 1000;
 }
@@ -315,7 +315,7 @@
 	top: 1.25em;
 	right: 1em;
 	display: none;
-	color: #45464e;
+	color: white;
 }
 
 @media screen and (max-width: 40em) {

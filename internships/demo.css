@@ -30,7 +30,7 @@ a {
 }
 
 .container{
-	background-image: linear-gradient(-45deg, #240b36, #c31432);
+	background: white;
 }
 
 a:hover {

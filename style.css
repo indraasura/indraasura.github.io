@@ -6,6 +6,9 @@
     .profile-home, .introbg{
         display: none;
     }
+    .mesh1{
+        opacity: 0.4;
+    }
 }
 
 
@@ -16,6 +19,9 @@
     }
     .profile-home{
         height: 90vh;
+    }
+    .mesh1{
+        opacity: 0.8;
     }
 }
 
@@ -68,10 +74,9 @@ strong{
 
 .mesh1{
     position: absolute;
-    right: -10%;
+    right: -20%;
     width: 80%;
     top: 5%;
-    opacity: 0.4;
     animation: rotate 25s infinite linear;
 }
 

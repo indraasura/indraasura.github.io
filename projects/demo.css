@@ -170,8 +170,10 @@ a:hover {
 	pointer-events: none;
 }
 
+
+
 .bp-header nav a:hover {
-	background: #5C5EDC;
+	background: #c31432;
 }
 
 .bp-icon:after {
